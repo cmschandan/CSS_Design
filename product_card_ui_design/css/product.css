@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ff4faf;
+    font-family: sans-serif;
+}
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 340px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    overflow:hidden;
+}
+.product .imgbox{
+    height: 100%;
+    box-sizing: border-box;
+}
+.product .imgbox img{
+    display: block;
+    width: 90%;
+    margin: 20px auto 0;
+}
+.details{
+    position: absolute;
+    width: 100%;
+    bottom: -130px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: .5s;
+}
+.product:hover .details{
+    bottom: 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,.25);
+}
+.details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+
+}
+.details h2 span{
+    font-size: 12px;
+    color: #ccc;
+    font-weight: normal;
+}
+.details .price {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    font-weight: bold;
+    color: #ff4faf;
+}
+label{
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+ul{
+    display:flex;
+    margin: 0;
+    padding : 0;
+}
+ul li{
+    list-style: none;
+    margin: 5px 5px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ccc;
+}
+ul li:first-child{
+    margin-left: 0;
+}
+ul.colors li{
+    width: 16px;
+    height: 16px;
+}
+ul.colors li:nth-child(1){
+    background: #ff0;
+}
+ul.colors li:nth-child(2){
+    background: #f00;
+}
+ul.colors li:nth-child(3){
+    background: #f0f;
+}
+ul.colors li:nth-child(4){
+    background: #0ff;
+}
+ul.colors li:nth-child(5){
+    background: #00f;
+}
+a
+{
+    display:block;
+    padding: 5px;
+    color: #fff;
+    margin: 15px 0 0;
+    background: #ff4faf;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+a:hover{
+    background: #ff209a;
+}

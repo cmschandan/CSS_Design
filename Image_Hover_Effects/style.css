@@ -24,15 +24,20 @@ body
 	width:100%;
 	transition:0.5s;
 }
+.container:hover img:nth-child(5)
+{
+	transform: translate(200px, -200px);
+	opacity: .9;
+}
 .container:hover img:nth-child(4)
 {
 	transform: translate(160px, -160px);
-	opacity: 1;
+	opacity: .8;
 }
 .container:hover img:nth-child(3)
 {
 	transform: translate(120px, -120px);
-	opacity: .8;
+	opacity: .7;
 }
 .container:hover img:nth-child(2)
 {
